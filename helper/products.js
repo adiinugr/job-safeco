@@ -655,7 +655,7 @@ export const wide = [
   {
     id: 1,
     title: "Wide Container 400 ml",
-    imagePath: "/images/wide/wide-500ml.JPG",
+    imagePath: "/images/wide/wide-400ml.jpeg",
     desc: [
       {
         id: 1,
@@ -839,8 +839,8 @@ export const wide = [
   },
   {
     id: 6,
-    title: "wide Container 1300 ml",
-    imagePath: "/images/placeholder.png",
+    title: "Wide Container 1300 ml",
+    imagePath: "/images/wide/wide-1300ml.jpeg",
     desc: [
       {
         id: 1,
