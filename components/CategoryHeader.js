@@ -3,7 +3,7 @@ import React from "react";
 
 const CategoryHeader = ({ title }) => {
   return (
-    <div className="bg-gray-100 flex justify-center items-center py-5">
+    <div className="bg-gray-100 flex justify-center items-center px-6 md:px-0 py-5">
       <div className="mr-4">
         <Image
           src="/images/logo.jpeg"

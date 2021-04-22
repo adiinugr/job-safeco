@@ -541,7 +541,7 @@ export const oval = [
   {
     id: 5,
     title: "Oval Container 850 ml",
-    imagePath: "/images/oval/oval-700ml.JPG",
+    imagePath: "/images/oval/oval-850ml.JPG",
     desc: [
       {
         id: 1,
@@ -578,7 +578,7 @@ export const oval = [
   {
     id: 6,
     title: "Oval Container 1000 ml with 2 Compartments",
-    imagePath: "/images/oval/oval-850ml-with-2-compartments.JPG",
+    imagePath: "/images/oval/oval-1000ml-with-2-compartments.JPG",
     desc: [
       {
         id: 1,
