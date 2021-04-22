@@ -160,7 +160,7 @@ export const fastFood = [
   {
     id: 5,
     title: "Fast Food Container 1000 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/fast-food/fast-food-1000ml.jpeg",
     desc: [
       {
         id: 1,
@@ -197,7 +197,7 @@ export const fastFood = [
   {
     id: 6,
     title: "Fast Food Container 1000 ml with 2 Compartments",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/fast-food/fast-food-1000ml-2-compartment.jpeg",
     desc: [
       {
         id: 1,
@@ -237,7 +237,7 @@ export const bowlSeries = [
   {
     id: 1,
     title: "Big Bowl 900 ml",
-    imagePath: "/images/big-bowl&clover/big-bowl-1200ml.JPG",
+    imagePath: "/images/big-bowl&clover/big-bowl-900ml.JPG",
     desc: [
       {
         id: 1,
