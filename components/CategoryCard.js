@@ -10,8 +10,9 @@ const CategoryCard = ({ title, imagePath, uri }) => {
         <div className="mb-2">
           <Image
             src={imagePath}
-            height={200}
-            width={200}
+            height={300}
+            width={300}
+            layout="responsive"
             className="rounded-md"
           />
         </div>

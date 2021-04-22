@@ -9,7 +9,7 @@ const Wide = () => {
     <div>
       <CategoryHeader title="Wide Container Series" />
       <BackButton />
-      <div className="bg-white py-10 px-40">
+      <div className="bg-white py-10 px-4 md:px-40">
         {wide.map((item) => (
           <ProductCard
             key={item.id}

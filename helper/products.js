@@ -2,7 +2,7 @@ export const fastFood = [
   {
     id: 1,
     title: "Fast Food Container 450 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/fast-food/fast-food-600ml.JPG",
     desc: [
       {
         id: 1,
@@ -39,7 +39,7 @@ export const fastFood = [
   {
     id: 2,
     title: "Fast Food Container 600 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/fast-food/fast-food-600ml.JPG",
     desc: [
       {
         id: 1,
@@ -76,7 +76,7 @@ export const fastFood = [
   {
     id: 3,
     title: "Burger Container 450 ml Color (White)",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/fast-food/burger-450ml.JPG",
     desc: [
       {
         id: 1,
@@ -118,7 +118,7 @@ export const fastFood = [
   {
     id: 4,
     title: "Burger Container 450 ml Color (Natural)",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/fast-food/burger-450ml-natural.png",
     desc: [
       {
         id: 1,
@@ -237,7 +237,7 @@ export const bowlSeries = [
   {
     id: 1,
     title: "Big Bowl 900 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/big-bowl&clover/big-bowl-1200ml.JPG",
     desc: [
       {
         id: 1,
@@ -269,7 +269,7 @@ export const bowlSeries = [
   {
     id: 2,
     title: "Big Bowl with Lid 1200 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/big-bowl&clover/big-bowl-with-lid-1200ml.JPG",
     desc: [
       {
         id: 1,
@@ -306,7 +306,7 @@ export const bowlSeries = [
   {
     id: 3,
     title: "Clover Container 800 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/big-bowl&clover/clover-800ml.JPG",
     desc: [
       {
         id: 1,
@@ -348,7 +348,7 @@ export const bowlSeries = [
   {
     id: 4,
     title: "Clover Container 750 ml (2 compartments)",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/big-bowl&clover/clover-750-ml-with-2-compartments.JPG",
     desc: [
       {
         id: 1,
@@ -393,7 +393,7 @@ export const oval = [
   {
     id: 1,
     title: "Oval Container 500 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/oval/oval-500ml.jpeg",
     desc: [
       {
         id: 1,
@@ -430,7 +430,7 @@ export const oval = [
   {
     id: 2,
     title: "Oval Container 700 ml with Compartments",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/oval/oval-700ml-with-2-compartments.JPG",
     desc: [
       {
         id: 1,
@@ -467,7 +467,7 @@ export const oval = [
   {
     id: 3,
     title: "Oval Container 700 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/oval/oval-700ml.JPG",
     desc: [
       {
         id: 1,
@@ -504,7 +504,7 @@ export const oval = [
   {
     id: 4,
     title: "Oval Container 850 ml with 2 compartments",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/oval/oval-850ml-with-2-compartments.JPG",
     desc: [
       {
         id: 1,
@@ -541,7 +541,7 @@ export const oval = [
   {
     id: 5,
     title: "Oval Container 850 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/oval/oval-700ml.JPG",
     desc: [
       {
         id: 1,
@@ -578,7 +578,7 @@ export const oval = [
   {
     id: 6,
     title: "Oval Container 1000 ml with 2 Compartments",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/oval/oval-850ml-with-2-compartments.JPG",
     desc: [
       {
         id: 1,
@@ -615,7 +615,7 @@ export const oval = [
   {
     id: 7,
     title: "Oval Container 1000 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/oval/oval-1000ml.JPG",
     desc: [
       {
         id: 1,
@@ -655,7 +655,7 @@ export const wide = [
   {
     id: 1,
     title: "Wide Container 400 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/wide/wide-500ml.JPG",
     desc: [
       {
         id: 1,
@@ -692,7 +692,7 @@ export const wide = [
   {
     id: 2,
     title: "Wide Container 500 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/wide/wide-500ml.JPG",
     desc: [
       {
         id: 1,
@@ -729,7 +729,7 @@ export const wide = [
   {
     id: 3,
     title: "Wide Container 700 ml with 2 Compartments",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/wide/wide-700ml.JPG",
     desc: [
       {
         id: 1,
@@ -766,7 +766,7 @@ export const wide = [
   {
     id: 4,
     title: "Wide Container 750 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/wide/wide-750ml.JPG",
     desc: [
       {
         id: 1,
@@ -803,7 +803,7 @@ export const wide = [
   {
     id: 5,
     title: "Wide Container 950 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/wide/wide-950ml.JPG",
     desc: [
       {
         id: 1,
@@ -880,7 +880,7 @@ export const extraWide = [
   {
     id: 1,
     title: "Extra Wide 750 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/extra-wide/extra-wide-750ml.jpeg",
     desc: [
       {
         id: 1,
@@ -912,7 +912,7 @@ export const extraWide = [
   {
     id: 2,
     title: "Extra Wide 1000 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/extra-wide/extra-wide-1000ml.jpeg",
     desc: [
       {
         id: 1,
@@ -944,7 +944,7 @@ export const extraWide = [
   {
     id: 3,
     title: "Extra Wide 1250 ml",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/extra-wide/extra-wide-1250ml.jpeg",
     desc: [
       {
         id: 1,
@@ -976,7 +976,7 @@ export const extraWide = [
   {
     id: 4,
     title: "5 Compartment Container",
-    imagePath: "/images/placeholder.png",
+    imagePath: "/images/extra-wide/5-compartment.jpeg",
     desc: [
       {
         id: 1,

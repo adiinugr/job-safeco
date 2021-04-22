@@ -9,7 +9,7 @@ const ExtraWide = () => {
     <div>
       <CategoryHeader title="Extra Wide Container Series" />
       <BackButton />
-      <div className="bg-white py-10 px-40">
+      <div className="bg-white py-10 px-4 md:px-40">
         {extraWide.map((item) => (
           <ProductCard
             key={item.id}

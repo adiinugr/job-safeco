@@ -9,7 +9,7 @@ const FastFood = () => {
     <div>
       <CategoryHeader title="Fast Food Container Series" />
       <BackButton />
-      <div className="bg-white py-10 px-40">
+      <div className="bg-white py-10 px-4 md:px-40">
         {fastFood.map((item) => (
           <ProductCard
             key={item.id}

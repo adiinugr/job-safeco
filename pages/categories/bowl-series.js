@@ -9,7 +9,7 @@ const BowlSeries = () => {
     <div>
       <CategoryHeader title="Bowl Series & Clover Container Series" />
       <BackButton />
-      <div className="bg-white py-10 px-40">
+      <div className="bg-white py-10 px-4 md:px-40">
         {bowlSeries.map((item) => (
           <ProductCard
             key={item.id}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import { MdMenu } from "react-icons/md";
 
 const HomeHeader = () => {
@@ -10,7 +11,8 @@ const HomeHeader = () => {
         <div className="bg-white">
           <div className="px-5 py-4 md:px-12 md:py-3 flex items-center justify-between">
             <div className="flex items-center">
-              <div className="font-medium text-safeco-pimary text-lg md:text-3xl">
+              <Image src="/images/logo.jpeg" height={90} width={90} />
+              <div className="font-medium text-safeco-pimary text-lg md:text-3xl ml-4">
                 Safeco
               </div>
             </div>

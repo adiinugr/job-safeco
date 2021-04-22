@@ -3,10 +3,12 @@ import Image from "next/image";
 
 import HomeHeader from "../components/HomeHeader";
 import CategoryCard from "../components/CategoryCard";
+import YoutubePlayer from "../components/YoutubePlayer";
 
 import { categories } from "../helper/categories";
 import { reasonChooseSafeco } from "../helper/reasonChooseSafeco";
 import { HiCheck } from "react-icons/hi";
+import { youtube } from "../helper/youtube";
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
         <div className="container relative mx-auto">
           <div className="flex flex-col md:flex-row items-center pt-16 mb-16 md:mb-0 md:pb-0 md:h-screen ">
             <div className="md:w-1/2 mt-16 md:mt-0 mb-4 sm:mb-16 md:mb-0">
-              <p className="text-2xl md:text-3xl font-semibold mb-4 md:mb-8 text-gray-200">
+              <p className="text-2xl md:text-3xl font-semibold mb-4 md:mb-8 mt-6 md:mt-0 text-gray-200">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
               <p className="mb-4 md:mb-8 leading-5 text-gray-200">
@@ -31,7 +33,7 @@ export default function Home() {
               </p>
               <Link href="/">
                 <button className="bg-gray-200 focus:outline-none text-gray-600 font-semibold px-5 md:px-4 py-4 md:py-3 rounded">
-                  Get Started
+                  More Information
                 </button>
               </Link>
             </div>
@@ -66,8 +68,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex pt-10 pb-20">
-        <div className="w-1/2 relative">
+      <section className="flex md:flex-row flex-col pt-10 pb-10">
+        <div className="w-full h-96 md:h-auto md:w-1/2 relative">
           <Image
             src="/images/placeholder.png"
             layout="fill"
@@ -75,17 +77,28 @@ export default function Home() {
             className="absolute"
           />
         </div>
-        <div className="bg-safeco-pimary w-1/2 p-14">
+        <div className="bg-safeco-pimary w-full md:w-1/2 p-8 md:p-14">
           <p className="text-3xl text-gray-100 mb-6">Why Choose Safeco</p>
           {reasonChooseSafeco.map((item, index) => (
-            <div className="flex text-gray-100">
-              <HiCheck size={20} />
-              <p key={index} className="ml-4 mb-1">
-                {item}
-              </p>
+            <div key={index} className="flex text-gray-100">
+              <div>
+                <HiCheck size={20} />
+              </div>
+              <div className="ml-4 mb-1">{item}</div>
             </div>
           ))}
         </div>
+      </section>
+
+      <section>
+        <p className="font-medium text-center text-xl md:text-3xl mb-6">
+          Our Video
+        </p>
+        {youtube.map((item) => (
+          <div key={item.id} className="relative w-full px-6 md:px-40 mb-4">
+            <YoutubePlayer videoId={item.linkId} />
+          </div>
+        ))}
       </section>
 
       <footer className="bg-safeco-pimary">

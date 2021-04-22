@@ -9,7 +9,7 @@ const Oval = () => {
     <div>
       <CategoryHeader title="Oval Container Series" />
       <BackButton />
-      <div className="bg-white py-10 px-40">
+      <div className="bg-white py-10 px-4 md:px-40">
         {oval.map((item) => (
           <ProductCard
             key={item.id}
