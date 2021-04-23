@@ -2,7 +2,10 @@ import Image from "next/image";
 
 const ProductCard = ({ imagePath, title, desc }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-safeco-pimary px-6 md:px-20 py-10 mb-6 rounded-md shadow-lg">
+    <div
+      data-aos="slide-up"
+      className="flex flex-col md:flex-row items-center bg-safeco-pimary px-6 md:px-20 py-10 mb-6 rounded-md shadow-lg"
+    >
       <div className="w-80 h-80 mb-4 md:mb-0 relative">
         <Image
           src={imagePath}

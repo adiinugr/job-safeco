@@ -1,5 +1,7 @@
-import Link from "next/link";
+import { useEffect } from "react";
 import Image from "next/image";
+import Aos from "aos";
+import { Link as ScrollLink } from "react-scroll";
 
 import HomeHeader from "../components/HomeHeader";
 import CategoryCard from "../components/CategoryCard";
@@ -10,49 +12,62 @@ import { reasonChooseSafeco } from "../helper/reasonChooseSafeco";
 import { HiCheck } from "react-icons/hi";
 import { youtube } from "../helper/youtube";
 
+import "aos/dist/aos.css";
+import CustomHead from "../components/CustomHead";
+
 export default function Home() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="min-h-screen">
+      <CustomHead />
       <HomeHeader />
       <div className="relative overflow-hidden px-10 md:px-20 bg-safeco-pimary">
         <div className="container relative mx-auto">
-          <div className="flex flex-col md:flex-row items-center pt-16 mb-16 md:mb-0 md:pb-0 md:h-screen ">
-            <div className="md:w-1/2 mt-16 md:mt-0 mb-4 sm:mb-16 md:mb-0">
+          <div className="flex flex-col-reverse md:flex-row items-center pt-16 mb-16 md:mb-0 md:pb-0 md:h-screen ">
+            <div data-aos="slide-right" className="md:w-1/2 mb-4">
               <p className="text-2xl md:text-3xl font-semibold mb-4 md:mb-8 mt-6 md:mt-0 text-gray-200">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Safeco Packaging
               </p>
-              <p className="mb-4 md:mb-8 leading-5 text-gray-200">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-                praesentium! Molestiae, illo maxime? Suscipit vero voluptatum
-                corrupti minima tempore totam maxime fuga id porro sunt.
-                Laudantium eius, doloribus, officiis atque magni eum vitae
-                veniam debitis nihil perspiciatis ipsum voluptate minus voluptas
-                consequatur ab sit. Itaque, iusto? Inventore natus quibusdam ad
-                quisquam dolore deserunt magni facere eligendi dolorum quidem!
-                Quam, dolore.
+              <p className="mb-6 md:mb-8 leading-5 text-gray-200">
+                Plant based material packaging. Biodegradable, compostable,
+                healthy, and recyclable. Saving resource and protecting the
+                environtment.
               </p>
-              <Link href="/">
-                <button className="bg-gray-200 focus:outline-none text-gray-600 font-semibold px-5 md:px-4 py-4 md:py-3 rounded">
+              <ScrollLink to="category" smooth={true} duration={800}>
+                <button className="bg-gray-200 focus:outline-none text-gray-600 font-semibold px-5 md:px-4 py-3 md:py-2 rounded">
                   More Information
                 </button>
-              </Link>
+              </ScrollLink>
             </div>
-            <div className="md:w-1/2 mt-16 sm:mt-0 text-center flex-1 flex justify-end">
-              <Image src="/images/placeholder.png" height={400} width={400} />
+            <div
+              data-aos="slide-left"
+              className="md:w-1/2 mt-24 md:mt-0 mb-4 md:mb-0 text-center flex-1 flex justify-end"
+            >
+              <Image
+                src="/images/image1.png"
+                height={400}
+                width={400}
+                className="rounded-md"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      <section className="flex flex-col justify-center items-center bg-white px-10">
-        <div className="py-10 text-gray-800">
+      <section
+        id="category"
+        className="flex flex-col justify-center items-center bg-white px-10 overflow-hidden"
+      >
+        <div data-aos="zoom-in" className="py-10 text-gray-800">
           <p className="font-medium text-center text-xl md:text-3xl mb-2">
             Product Categories
           </p>
           <p className="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            quia recusandae nemo iusto fugit maxime esse unde eligendi,
-            quibusdam cum!
+            Ada berbagai macam jenis packaging yang dapat menyesuaikan kebutuhan
+            kamu.
           </p>
         </div>
 
@@ -68,16 +83,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex md:flex-row flex-col pt-10 pb-10">
-        <div className="w-full h-96 md:h-auto md:w-1/2 relative">
+      <section className="flex md:flex-row flex-col pt-10 pb-10 overflow-hidden">
+        <div
+          data-aos="slide-left"
+          className="w-full h-96 md:h-auto md:w-1/2 relative"
+        >
           <Image
-            src="/images/placeholder.png"
+            src="/images/image2.png"
             layout="fill"
             objectFit="cover"
             className="absolute"
           />
         </div>
-        <div className="bg-safeco-pimary w-full md:w-1/2 p-8 md:p-14">
+        <div
+          data-aos="slide-right"
+          className="bg-safeco-pimary w-full md:w-1/2 p-8 md:p-14"
+        >
           <p className="text-3xl text-gray-100 mb-6">Why Choose Safeco</p>
           {reasonChooseSafeco.map((item, index) => (
             <div key={index} className="flex text-gray-100">
@@ -90,12 +111,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <p className="font-medium text-center text-xl md:text-3xl mb-6">
-          Our Video
-        </p>
+      <section className="overflow-hidden">
+        <div data-aos="zoom-in" className="py-10 text-gray-800">
+          <p className="font-medium text-center text-xl md:text-3xl mb-2">
+            Our Video
+          </p>
+          <p className="text-center">
+            Safeco Packaging sangat mengutamakan kualitas untuk hasil yang
+            terbaik.
+          </p>
+        </div>
         {youtube.map((item) => (
-          <div key={item.id} className="relative w-full px-6 md:px-40 mb-4">
+          <div
+            data-aos="slide-up"
+            key={item.id}
+            className="relative w-full px-6 md:px-40 mb-4"
+          >
             <YoutubePlayer videoId={item.linkId} />
           </div>
         ))}

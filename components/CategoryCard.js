@@ -4,7 +4,10 @@ import { HiEye } from "react-icons/hi";
 
 const CategoryCard = ({ title, imagePath, uri }) => {
   return (
-    <div className="flex flex-col bg-safeco-pimary rounded-sm p-6 justify-between">
+    <div
+      data-aos="slide-up"
+      className="flex flex-col bg-safeco-pimary rounded-sm p-6 justify-between"
+    >
       <div className="font-semibold text-center mb-4 text">{title}</div>
       <div>
         <div className="mb-2">

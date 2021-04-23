@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { MdMenu } from "react-icons/md";
+import Link from "next/link";
 
 const HomeHeader = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,12 +18,16 @@ const HomeHeader = () => {
               </div>
             </div>
             <div className="hidden md:flex items-center text-safeco-pimary">
-              <button className="px-4 py-2 hover:text-gray-500 focus:outline-none focus:text-gray-500">
-                Home
-              </button>
-              <button className="px-4 py-2 hover:text-gray-500 focus:outline-none focus:text-gray-500">
-                About
-              </button>
+              <Link href="/">
+                <button className="px-4 py-2 hover:text-gray-500 focus:outline-none focus:text-gray-500">
+                  Home
+                </button>
+              </Link>
+              <Link href="/contact-us">
+                <button className="px-4 py-2 hover:text-gray-500 focus:outline-none focus:text-gray-500">
+                  Contact Us
+                </button>
+              </Link>
             </div>
             <div></div>
             <button
@@ -35,9 +40,12 @@ const HomeHeader = () => {
         </div>
         {showMenu && (
           <div className="bg-white p-6 text-safeco-pimary flex flex-col">
-            <button className="px-4 py-2 font-medium">Home</button>
-            <button className="px-4 py-2 font-medium">Process</button>
-            <button className="px-4 py-2 font-medium">About us</button>
+            <Link href="/">
+              <button className="px-4 py-2 font-medium">Home</button>
+            </Link>
+            <Link href="/contact-us">
+              <button className="px-4 py-2 font-medium">Contact us</button>
+            </Link>
           </div>
         )}
       </div>
